@@ -31,6 +31,12 @@ const Hero = () => {
               size="lg" 
               variant="secondary"
               className="bg-white/10 hover:bg-white/20 text-white border-white/20 backdrop-blur-sm"
+              onClick={() => {
+                const element = document.getElementById('experience');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               <ExternalLink className="mr-2 h-5 w-5" />
               View My Professional Experience
@@ -48,15 +54,15 @@ const Hero = () => {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
               <h3 className="text-3xl font-bold text-accent">28,461</h3>
-              <p className="text-sm opacity-90">Critical Equipment Items Relocated</p>
+              <p className="text-sm opacity-90">Items Safe Relocation of Aramco drilling material</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-3xl font-bold text-success-green">Zero</h3>
+              <h3 className="text-3xl font-bold text-black">Zero</h3>
               <p className="text-sm opacity-90">Incident Record</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-3xl font-bold text-safety-yellow">Level 6</h3>
-              <p className="text-sm opacity-90">NEBOSH Diploma</p>
+              <h3 className="text-3xl font-bold text-safety-yellow">UK Level 6</h3>
+              <p className="text-sm opacity-90">NEBOSH Intl Diploma</p>
             </div>
           </div>
         </div>
