@@ -82,7 +82,7 @@ const Experience = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Work Experience</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Professional Experience</h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Proven track record in health, safety, and environmental management across diverse industries

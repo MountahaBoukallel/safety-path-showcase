@@ -12,9 +12,11 @@ const About = () => {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-primary">Your path into safety?</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-primary">My Path Into Safety</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
+                  My interest in health and safety began while managing a high-pressure work environment, where I recognized 
+                  the critical role of safeguarding people and optimizing operational efficiency through effective safety practices. 
                   I'm a qualified Occupational Health and Safety professional with internationally recognized credentials, 
                   including the <strong className="text-foreground">NEBOSH Level 6 International Diploma (with credits)</strong>. 
                   I specialize in occupational hazard identification & risk management within oil & gas drilling material 

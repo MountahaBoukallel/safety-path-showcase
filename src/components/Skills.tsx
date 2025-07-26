@@ -16,40 +16,40 @@ import {
 } from "lucide-react";
 
 // Import skill images
-import safetyManagementImg from "@/assets/safety-management.jpg";
-import riskAssessmentImg from "@/assets/risk-assessment.jpg";
-import emergencyResponseImg from "@/assets/emergency-response.jpg";
-import safetyTrainingImg from "@/assets/safety-training.jpg";
+import safetyTrainingImg from "@/assets/safety-training-awareness.jpg";
+import forkliftSafetyImg from "@/assets/forklift-safety.jpg";
+import logisticsComplianceImg from "@/assets/logistics-compliance.jpg";
+import conflictResolutionImg from "@/assets/conflict-resolution-safety.jpg";
 
 const Skills = () => {
   const featuredSkills = [
     {
-      title: "Safety Management",
-      description: "Comprehensive safety program development and implementation with proven track record in high-risk environments.",
-      image: safetyManagementImg,
-      icon: Shield,
-      badge: "Core Expertise"
-    },
-    {
-      title: "Risk Assessment",
-      description: "Advanced risk identification, analysis, and mitigation strategies for industrial operations.",
-      image: riskAssessmentImg,
-      icon: FileSearch,
-      badge: "NEBOSH Certified"
-    },
-    {
-      title: "Emergency Response",
-      description: "Emergency planning, evacuation procedures, and crisis management for critical operations.",
-      image: emergencyResponseImg,
-      icon: AlertTriangle,
-      badge: "Aramco Certified"
-    },
-    {
-      title: "Safety Training",
-      description: "Development and delivery of safety training programs for multicultural teams.",
+      title: "Safety Training and Awareness",
+      description: "Development and delivery of comprehensive safety training programs for multicultural teams in high-risk industrial environments.",
       image: safetyTrainingImg,
       icon: BookOpen,
       badge: "Multilingual"
+    },
+    {
+      title: "Safe Operation of Forklifts",
+      description: "Expert oversight of forklift operations, equipment inspections, and lifting equipment compliance in warehouse environments.",
+      image: forkliftSafetyImg,
+      icon: HardHat,
+      badge: "Certified"
+    },
+    {
+      title: "Logistics Safety and Drivers Compliance",
+      description: "Implementation of safety protocols for truck drivers and logistics operations in accordance with Aramco standards.",
+      image: logisticsComplianceImg,
+      icon: Truck,
+      badge: "Aramco Certified"
+    },
+    {
+      title: "Conflict Resolution",
+      description: "Professional mediation and conflict resolution skills for maintaining workplace harmony and safety compliance.",
+      image: conflictResolutionImg,
+      icon: Users,
+      badge: "Core Skill"
     }
   ];
 
@@ -69,10 +69,10 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Top Skills</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Core Skills</h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Specialized expertise in occupational health & safety with internationally recognized certifications
+              Specialized expertise in occupational health & safety with internationally recognized qualifications
             </p>
           </div>
 
@@ -106,9 +106,9 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Additional Skills */}
+          {/* Aramco Mandatory Certifications */}
           <div>
-            <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">Additional Expertise</h3>
+            <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">Aramco Mandatory Certification</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {additionalSkills.map((skill, index) => (
                 <Card key={index} className="hover:shadow-md transition-all duration-300 group cursor-pointer">
@@ -139,12 +139,16 @@ const Skills = () => {
                     <p className="opacity-90">International Diploma in Occupational Health & Safety Management</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">IOSH Managing Safely</h4>
-                    <p className="opacity-90">Leadership in safety management practices</p>
+                    <h4 className="font-semibold mb-2">IOH</h4>
+                    <p className="opacity-90">Institution of Occupational Health certification</p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">OSHA 30 Hours</h4>
                     <p className="opacity-90">General Industry safety standards</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">IELTS</h4>
+                    <p className="opacity-90">International English Language Testing System - Band 6.5</p>
                   </div>
                 </div>
               </CardContent>

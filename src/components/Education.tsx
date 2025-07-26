@@ -25,28 +25,6 @@ const Education = () => {
       featured: true
     },
     {
-      degree: "IELTS Academic",
-      field: "English Language Proficiency",
-      institution: "British Council",
-      grade: "Band 6.5",
-      year: "Jan 2025",
-      status: "completed"
-    },
-    {
-      degree: "IOSH Managing Safely",
-      field: "Safety Management",
-      institution: "Save Fast Dubai",
-      year: "2023",
-      status: "completed"
-    },
-    {
-      degree: "OSHA 30 Hours",
-      field: "General Industry",
-      institution: "Green World Group – Saudi Arabia",
-      year: "2024",
-      status: "completed"
-    },
-    {
       degree: "FA (Fine Arts)",
       field: "Intermediate College Diploma",
       institution: "Pakistan, Islamabad",

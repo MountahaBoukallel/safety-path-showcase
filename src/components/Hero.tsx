@@ -53,11 +53,13 @@ const Hero = () => {
           
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-3xl font-bold text-accent">28,461</h3>
-              <p className="text-sm opacity-90">Items Safe Relocation of Aramco drilling material</p>
+              <h3 className="text-3xl font-bold text-accent">
+                28,461 <span className="text-sm font-normal">Items</span>
+              </h3>
+              <p className="text-sm opacity-90">Safe Relocation of Aramco Drilling Material</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-              <h3 className="text-3xl font-bold text-black">Zero</h3>
+              <h3 className="text-3xl font-bold text-white">Zero</h3>
               <p className="text-sm opacity-90">Incident Record</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
