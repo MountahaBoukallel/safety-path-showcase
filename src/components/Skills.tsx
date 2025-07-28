@@ -135,10 +135,6 @@ const Skills = () => {
                 <h3 className="text-2xl font-semibold mb-4">Key Certifications</h3>
                 <div className="grid md:grid-cols-3 gap-6 text-sm">
                   <div>
-                    <h4 className="font-semibold mb-2">NEBOSH Level 6</h4>
-                    <p className="opacity-90">International Diploma in Occupational Health & Safety Management</p>
-                  </div>
-                  <div>
                     <h4 className="font-semibold mb-2">IOH</h4>
                     <p className="opacity-90">Institution of Occupational Health certification</p>
                   </div>

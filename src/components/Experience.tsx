@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Building, Calendar, MapPin, Trophy, Users, Zap } from "lucide-react";
+import { Building, Calendar, MapPin, Trophy, Users, Zap, TrendingDown } from "lucide-react";
+import incidentChartImg from "@/assets/incident-reduction-chart.jpg";
 
 const Experience = () => {
   const experiences = [
@@ -89,38 +90,139 @@ const Experience = () => {
             </p>
           </div>
 
-          {/* Key Project Highlight */}
+          {/* Featured Projects */}
           <div className="mb-16">
-            <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">Featured Project</h3>
-            {keyProjects.map((project, index) => (
-              <Card key={index} className="border-l-4 border-l-primary bg-gradient-to-r from-primary/5 to-transparent">
-                <CardContent className="p-8">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-full bg-primary text-primary-foreground">
-                      <Trophy className="h-6 w-6" />
+            <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">Featured Projects</h3>
+            <div className="space-y-12">
+              <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
+                <div className="grid md:grid-cols-2 gap-0">
+                  {/* Project Image */}
+                  <div className="relative h-48 md:h-auto overflow-hidden">
+                    <img 
+                      src={incidentChartImg} 
+                      alt="Incident Rate Reduction Chart"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-primary/10"></div>
+                    <div className="absolute top-4 right-4">
+                      <Badge variant="secondary" className="bg-white/90 text-primary">
+                        <TrendingDown className="mr-1 h-3 w-3" />
+                        Incident Reduction
+                      </Badge>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-semibold text-foreground mb-3">{project.title}</h4>
-                      <p className="text-muted-foreground mb-4">{project.description}</p>
-                      <div className="grid md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                          <h5 className="font-semibold text-foreground mb-2">Impact:</h5>
-                          <p className="text-success-green font-medium">{project.impact}</p>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-sm font-medium bg-black/50 px-2 py-1 rounded">
+                        8 to 2 incidents per 1000 operations
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Project Content */}
+                  <CardContent className="p-8">
+                    <div className="mb-6">
+                      <div className="flex items-start justify-between mb-4">
+                        <h4 className="text-2xl font-bold text-foreground mb-2">Logistics Safety & Driver Compliance – Aramco Facility</h4>
+                      </div>
+                      
+                      <div className="space-y-2 mb-4">
+                        <div className="flex items-center text-muted-foreground">
+                          <MapPin className="mr-2 h-4 w-4" />
+                          <span className="text-sm">Saudi Aramco – Drilling Material Logistics Support (Eastern Province)</span>
                         </div>
-                        <div>
-                          <h5 className="font-semibold text-foreground mb-2">Tools & Standards:</h5>
-                          <div className="flex flex-wrap gap-2">
-                            {project.tools.map((tool, i) => (
-                              <Badge key={i} variant="outline" className="text-xs">{tool}</Badge>
-                            ))}
-                          </div>
+                        <div className="flex items-center text-muted-foreground">
+                          <Calendar className="mr-2 h-4 w-4" />
+                          <span className="text-sm font-medium">Scope: Oil and Gas Supply Chain (Drilling Materials)</span>
                         </div>
                       </div>
                     </div>
+
+                    <div>
+                      <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements & Responsibilities</h5>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                          <span className="text-muted-foreground leading-relaxed">Supported the compilation and implementation of safety instructions for truck drivers entering the SPARK Drilling Industrial Facility, in accordance with Saudi Aramco's safety policies and guidelines.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                          <span className="text-muted-foreground leading-relaxed">Contributed to multilingual communication of site-specific rules covering PPE, vehicle safety, restricted zones, loading/unloading, and emergency procedures.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                          <span className="text-muted-foreground leading-relaxed">Assisted with the enforcement of rules around engine shut-off, reverse alarms, speed control (25 km/h), and hazard awareness at the tool house zone.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                          <span className="text-muted-foreground leading-relaxed">Participated in site walkthroughs and inspections to verify driver compliance with Aramco regulations.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                          <span className="text-muted-foreground leading-relaxed">Helped facilitate safety toolbox talks and briefings related to driver behavior, equipment maneuvering, and materials handling in high-risk zones.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </div>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-8 md:col-span-2">
+                  <div className="mb-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <h4 className="text-2xl font-bold text-foreground mb-2">Safe Operation of Forklifts & Lifting Compliance – Aramco Facility</h4>
+                      <Badge variant="secondary" className="bg-primary/10 text-primary">
+                        Zero Incidents
+                      </Badge>
+                    </div>
+                    
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center text-muted-foreground">
+                        <MapPin className="mr-2 h-4 w-4" />
+                        <span className="text-sm">Saudi Aramco – Drilling Material Logistics Support (Eastern Province)</span>
+                      </div>
+                      <div className="flex items-center text-muted-foreground">
+                        <Calendar className="mr-2 h-4 w-4" />
+                        <span className="text-sm font-medium">Scope: Forklift Safety | Lifting Equipment | Warehouse Operations</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements & Responsibilities</h5>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Supported the safe operation of forklifts within drilling material yards and warehouse environments.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Conducted routine forklift inspections to ensure compliance with operational safety standards.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Maintained and updated the Lifting Equipment Register, tracking equipment status and inspection dates.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Identified potential hazards and risks associated with forklift movements, narrow path navigation, stacking procedures, and pedestrian interaction zones.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Reported unsafe behaviors and recommended corrective actions during field observations.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Promoted awareness of proper load handling, visibility checks, and safe turning practices through toolbox talks and supervisor coordination.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="mt-6 p-4 bg-primary/5 rounded-lg">
+                    <p className="text-sm font-medium text-primary">100% Compliance Rate</p>
                   </div>
                 </CardContent>
               </Card>
-            ))}
+            </div>
           </div>
 
           {/* Experience Timeline */}

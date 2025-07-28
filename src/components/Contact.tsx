@@ -113,26 +113,6 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              {/* Quick Actions */}
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-4 text-foreground">Quick Actions</h3>
-                  <div className="space-y-3">
-                    <Button className="w-full justify-start" variant="outline">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Resume
-                    </Button>
-                    <Button className="w-full justify-start" variant="outline">
-                      <Calendar className="mr-2 h-4 w-4" />
-                      Schedule Consultation
-                    </Button>
-                    <Button className="w-full justify-start" variant="outline">
-                      <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp Chat
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
             {/* Contact Form */}
