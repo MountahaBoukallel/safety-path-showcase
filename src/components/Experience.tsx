@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Building, Calendar, MapPin, Trophy, Users, Zap, TrendingDown } from "lucide-react";
-import incidentChartImg from "@/assets/incident-reduction-chart.jpg";
+import incidentGraphImg from "/lovable-uploads/53807dec-37b9-4e57-bb8e-1ba2d100b730.png";
 
 const Experience = () => {
   const experiences = [
@@ -99,8 +99,8 @@ const Experience = () => {
                   {/* Project Image */}
                   <div className="relative h-48 md:h-auto overflow-hidden">
                     <img 
-                      src={incidentChartImg} 
-                      alt="Incident Rate Reduction Chart"
+                      src={incidentGraphImg} 
+                      alt="Incident Rate Reduction Graph - Truck Driver Safety Guidelines"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-primary/10"></div>
@@ -112,7 +112,7 @@ const Experience = () => {
                     </div>
                     <div className="absolute bottom-4 left-4 text-white">
                       <p className="text-sm font-medium bg-black/50 px-2 py-1 rounded">
-                        8 to 2 incidents per 1000 operations
+                        Decreasing incident rate trend achieved
                       </p>
                     </div>
                   </div>
