@@ -95,74 +95,68 @@ const Experience = () => {
             <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">Featured Projects</h3>
             <div className="space-y-12">
               <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
-                <div className="grid md:grid-cols-2 gap-0">
-                  {/* Project Image */}
-                  <div className="relative h-48 md:h-auto overflow-hidden">
-                    <img 
-                      src={incidentGraphImg} 
-                      alt="Incident Rate Reduction Graph - Truck Driver Safety Guidelines"
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-primary/10"></div>
-                    <div className="absolute top-4 right-4">
-                      <Badge variant="secondary" className="bg-white/90 text-primary">
-                        <TrendingDown className="mr-1 h-3 w-3" />
-                        Incident Reduction
-                      </Badge>
+                <CardContent className="p-8 relative">
+                  <div className="mb-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <h4 className="text-2xl font-bold text-foreground mb-2">Logistics Safety & Driver Compliance – Aramco Facility</h4>
                     </div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="text-sm font-medium bg-black/50 px-2 py-1 rounded">
-                        Decreasing incident rate trend achieved
-                      </p>
+                    
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center text-muted-foreground">
+                        <MapPin className="mr-2 h-4 w-4" />
+                        <span className="text-sm">Saudi Aramco – Drilling Material Logistics Support (Eastern Province)</span>
+                      </div>
+                      <div className="flex items-center text-muted-foreground">
+                        <Calendar className="mr-2 h-4 w-4" />
+                        <span className="text-sm font-medium">Scope: Oil and Gas Supply Chain (Drilling Materials)</span>
+                      </div>
                     </div>
                   </div>
-                  
-                  {/* Project Content */}
-                  <CardContent className="p-8">
-                    <div className="mb-6">
-                      <div className="flex items-start justify-between mb-4">
-                        <h4 className="text-2xl font-bold text-foreground mb-2">Logistics Safety & Driver Compliance – Aramco Facility</h4>
-                      </div>
-                      
-                      <div className="space-y-2 mb-4">
-                        <div className="flex items-center text-muted-foreground">
-                          <MapPin className="mr-2 h-4 w-4" />
-                          <span className="text-sm">Saudi Aramco – Drilling Material Logistics Support (Eastern Province)</span>
-                        </div>
-                        <div className="flex items-center text-muted-foreground">
-                          <Calendar className="mr-2 h-4 w-4" />
-                          <span className="text-sm font-medium">Scope: Oil and Gas Supply Chain (Drilling Materials)</span>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div>
-                      <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements & Responsibilities</h5>
-                      <ul className="space-y-3">
-                        <li className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground leading-relaxed">Supported the compilation and implementation of safety instructions for truck drivers entering the SPARK Drilling Industrial Facility, in accordance with Saudi Aramco's safety policies and guidelines.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground leading-relaxed">Contributed to multilingual communication of site-specific rules covering PPE, vehicle safety, restricted zones, loading/unloading, and emergency procedures.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground leading-relaxed">Assisted with the enforcement of rules around engine shut-off, reverse alarms, speed control (25 km/h), and hazard awareness at the tool house zone.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground leading-relaxed">Participated in site walkthroughs and inspections to verify driver compliance with Aramco regulations.</span>
-                        </li>
-                        <li className="flex items-start">
-                          <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground leading-relaxed">Helped facilitate safety toolbox talks and briefings related to driver behavior, equipment maneuvering, and materials handling in high-risk zones.</span>
-                        </li>
-                      </ul>
+                  <div className="pr-48">
+                    <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements & Responsibilities</h5>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Supported the compilation and implementation of safety instructions for truck drivers entering the SPARK Drilling Industrial Facility, in accordance with Saudi Aramco's safety policies and guidelines.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Contributed to multilingual communication of site-specific rules covering PPE, vehicle safety, restricted zones, loading/unloading, and emergency procedures.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Assisted with the enforcement of rules around engine shut-off, reverse alarms, speed control (25 km/h), and hazard awareness at the tool house zone.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Participated in site walkthroughs and inspections to verify driver compliance with Aramco regulations.</span>
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground leading-relaxed">Helped facilitate safety toolbox talks and briefings related to driver behavior, equipment maneuvering, and materials handling in high-risk zones.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Small incident graph in bottom right */}
+                  <div className="absolute bottom-4 right-4 w-40 h-24">
+                    <div className="relative w-full h-full rounded-lg overflow-hidden shadow-md">
+                      <img 
+                        src={incidentGraphImg} 
+                        alt="Incident Rate Reduction Graph"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-primary/10"></div>
+                      <div className="absolute top-1 right-1">
+                        <Badge variant="secondary" className="bg-white/90 text-primary text-xs px-1 py-0">
+                          <TrendingDown className="mr-1 h-2 w-2" />
+                          Trend
+                        </Badge>
+                      </div>
                     </div>
-                  </CardContent>
-                </div>
+                  </div>
+                </CardContent>
               </Card>
 
               <Card className="overflow-hidden hover:shadow-lg transition-all duration-300">
