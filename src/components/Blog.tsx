@@ -155,23 +155,6 @@ const Blog = () => {
           </div>
         </div>
 
-        {/* Coming Soon Message */}
-        <div className="mt-16 text-center">
-          <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20">
-            <CardContent className="p-8">
-              <h4 className="text-xl font-semibold text-foreground mb-3">
-                More Content Coming Soon
-              </h4>
-              <p className="text-muted-foreground mb-4">
-                I'm continuously working on new articles and case studies. 
-                Connect with me to stay updated on the latest insights in occupational health and safety.
-              </p>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Subscribe for Updates
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
