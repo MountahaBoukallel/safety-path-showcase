@@ -6,7 +6,7 @@ import incidentGraphImg from "/lovable-uploads/53807dec-37b9-4e57-bb8e-1ba2d100b
 const Experience = () => {
   const experiences = [
     {
-      position: "Secretary to Drilling Support Unit Supervisor / HSE Focal Support",
+      position: "Secretary to Drilling Rig Support Unit Supervisor / HSE Focal Support",
       company: "Saudi Aramco (via Contractor)",
       location: "SPARK 6602, Saudi Arabia",
       period: "June 2022 – Present",
