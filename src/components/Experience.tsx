@@ -113,7 +113,25 @@ const Experience = () => {
                     </div>
                   </div>
 
-                  <div className="pr-48">
+                  {/* Incident graph with text wrapping */}
+                  <div className="float-right ml-4 mb-4" style={{width: '540px', height: '300px'}}>
+                    <div className="relative w-full h-full rounded-lg overflow-hidden shadow-md">
+                      <img 
+                        src={incidentGraphImg} 
+                        alt="Incident Rate Reduction Graph"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-primary/10"></div>
+                      <div className="absolute top-1 right-1">
+                        <Badge variant="secondary" className="bg-white/90 text-primary text-xs px-1 py-0">
+                          <TrendingDown className="mr-1 h-2 w-2" />
+                          Trend
+                        </Badge>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
                     <h5 className="text-lg font-semibold mb-4 text-foreground">Key Achievements & Responsibilities</h5>
                     <ul className="space-y-3">
                       <li className="flex items-start">
@@ -137,24 +155,6 @@ const Experience = () => {
                         <span className="text-muted-foreground leading-relaxed">Helped facilitate safety toolbox talks and briefings related to driver behavior, equipment maneuvering, and materials handling in high-risk zones.</span>
                       </li>
                     </ul>
-                  </div>
-
-                  {/* Small incident graph in bottom right */}
-                  <div className="absolute bottom-4 right-4" style={{width: '540px', height: '300px'}}>
-                    <div className="relative w-full h-full rounded-lg overflow-hidden shadow-md">
-                      <img 
-                        src={incidentGraphImg} 
-                        alt="Incident Rate Reduction Graph"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-primary/10"></div>
-                      <div className="absolute top-1 right-1">
-                        <Badge variant="secondary" className="bg-white/90 text-primary text-xs px-1 py-0">
-                          <TrendingDown className="mr-1 h-2 w-2" />
-                          Trend
-                        </Badge>
-                      </div>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
