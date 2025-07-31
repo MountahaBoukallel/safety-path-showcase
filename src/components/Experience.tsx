@@ -140,7 +140,7 @@ const Experience = () => {
                   </div>
 
                   {/* Small incident graph in bottom right */}
-                  <div className="absolute bottom-4 right-4 w-50 h-32">
+                  <div className="absolute bottom-4 right-4" style={{width: '540px', height: '300px'}}>
                     <div className="relative w-full h-full rounded-lg overflow-hidden shadow-md">
                       <img 
                         src={incidentGraphImg} 

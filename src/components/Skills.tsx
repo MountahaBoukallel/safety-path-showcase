@@ -54,14 +54,19 @@ const Skills = () => {
   ];
 
   const additionalSkills = [
-    { icon: Users, title: "Leadership & Team Management", category: "Management" },
-    { icon: Clock, title: "Time Management", category: "Management" },
-    { icon: Settings, title: "Conflict Resolution", category: "Soft Skills" },
-    { icon: CheckCircle2, title: "Regulatory Compliance", category: "Compliance" },
-    { icon: FileText, title: "Safety Audits", category: "Assessment" },
-    { icon: HardHat, title: "Heavy Equipment Safety", category: "Technical" },
-    { icon: Truck, title: "Logistics Management", category: "Operations" },
-    { icon: Building, title: "Incident Investigation", category: "Investigation" }
+    { icon: Shield, title: "Confined Space Awareness (Aramco)", category: "Safety" },
+    { icon: FileText, title: "Work Permit (Aramco)", category: "Compliance" },
+    { icon: AlertTriangle, title: "Fire safety Awareness (Aramco)", category: "Emergency" },
+    { icon: HardHat, title: "Hydrogen Sulfide Awareness for Drilling Operations (Aramco)", category: "Hazmat" },
+    { icon: FileSearch, title: "Job hazard Analysis JHA (Aramco)", category: "Assessment" },
+    { icon: Building, title: "Injury Reporting & Investigation (Aramco)", category: "Investigation" },
+    { icon: Users, title: "Floor Warden (Aramco)", category: "Emergency" },
+    { icon: BookOpen, title: "Safety Handbook I Emergency Response (Aramco)", category: "Emergency" },
+    { icon: Settings, title: "Safety Management System (Aramco)", category: "Management" },
+    { icon: CheckCircle2, title: "Environmental Management System EMS (Aramco)", category: "Environmental" },
+    { icon: Clock, title: "Office Safety Awareness (Aramco)", category: "Workplace" },
+    { icon: Truck, title: "Supply Chain Code of Conduct (Aramco)", category: "Ethics" },
+    { icon: Shield, title: "Ethics and Compliance for Upstream (Aramco)", category: "Ethics" }
   ];
 
   return (
