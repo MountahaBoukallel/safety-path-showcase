@@ -121,19 +121,24 @@ const Contact = () => {
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-semibold mb-6 text-foreground">Send a Message</h3>
                   
-                  <form className="space-y-6">
+                  <form 
+                    className="space-y-6"
+                    action="mailto:fayselabbasiisb@gmail.com"
+                    method="post"
+                    encType="text/plain"
+                  >
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
                           Full Name *
                         </label>
-                        <Input placeholder="Your full name" required />
+                        <Input name="name" placeholder="Your full name" required />
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
                           Email Address *
                         </label>
-                        <Input type="email" placeholder="your.email@company.com" required />
+                        <Input name="email" type="email" placeholder="your.email@company.com" required />
                       </div>
                     </div>
 
@@ -142,13 +147,13 @@ const Contact = () => {
                         <label className="block text-sm font-medium text-foreground mb-2">
                           Company/Organization
                         </label>
-                        <Input placeholder="Your company name" />
+                        <Input name="company" placeholder="Your company name" />
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-foreground mb-2">
                           Phone Number
                         </label>
-                        <Input placeholder="+966 XX XXX XXXX" />
+                        <Input name="phone" placeholder="+966 XX XXX XXXX" />
                       </div>
                     </div>
 
@@ -156,7 +161,7 @@ const Contact = () => {
                       <label className="block text-sm font-medium text-foreground mb-2">
                         Subject *
                       </label>
-                      <Input placeholder="Regarding HSE consultation..." required />
+                      <Input name="subject" placeholder="Regarding HSE consultation..." required />
                     </div>
 
                     <div>
@@ -164,6 +169,7 @@ const Contact = () => {
                         Message *
                       </label>
                       <Textarea 
+                        name="message"
                         placeholder="Please describe your HSE requirements, project details, or consultation needs..."
                         rows={6}
                         required 
