@@ -200,13 +200,13 @@ const Experience = () => {
                       <img 
                         src={incidentGraphImg} 
                         alt="Incident Rate Reduction Graph"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
-                      <div className="absolute inset-0 bg-primary/10"></div>
-                      <div className="absolute top-1 right-1">
-                        <Badge variant="secondary" className="bg-white/90 text-primary text-xs px-1 py-0">
-                          <TrendingDown className="mr-1 h-2 w-2" />
-                          Trend
+                      <div className="absolute inset-0 bg-primary/5"></div>
+                      <div className="absolute top-2 right-2">
+                        <Badge variant="secondary" className="bg-white/90 text-primary text-xs px-2 py-1">
+                          <TrendingDown className="mr-1 h-3 w-3" />
+                          Trend Analysis
                         </Badge>
                       </div>
                     </div>
