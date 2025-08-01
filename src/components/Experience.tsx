@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Building, Calendar, MapPin, Trophy, Users, Zap, TrendingDown } from "lucide-react";
-import incidentGraphImg from "/lovable-uploads/53807dec-37b9-4e57-bb8e-1ba2d100b730.png";
+import incidentGraphImg from "/lovable-uploads/fa038018-dd4c-4f4e-b647-b369b7760762.png";
 
 const Experience = () => {
   const experiences = [
