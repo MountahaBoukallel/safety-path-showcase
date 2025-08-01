@@ -16,10 +16,10 @@ import {
 } from "lucide-react";
 
 // Import skill images
-import safetyTrainingImg from "@/assets/safety-training-awareness.jpg";
-import forkliftSafetyImg from "@/assets/forklift-safety.jpg";
-import logisticsComplianceImg from "@/assets/logistics-compliance.jpg";
-import conflictResolutionImg from "@/assets/conflict-resolution-safety.jpg";
+import safetyTrainingImg from "/lovable-uploads/66834fef-cb86-4870-afa2-416c327ea6c6.png";
+import forkliftSafetyImg from "/lovable-uploads/042b9d1f-75ba-4318-ac35-f6f09c4d787b.png";
+import logisticsComplianceImg from "/lovable-uploads/a09709c0-965e-4615-9378-6af2eec6928c.png";
+import conflictResolutionImg from "/lovable-uploads/9b0738b9-7a5e-4dfd-bf6a-3d265f71c867.png";
 
 const Skills = () => {
   const featuredSkills = [
@@ -140,8 +140,8 @@ const Skills = () => {
                 <h3 className="text-2xl font-semibold mb-4">Key Certifications</h3>
                 <div className="grid md:grid-cols-3 gap-6 text-sm">
                   <div>
-                    <h4 className="font-semibold mb-2">IOH</h4>
-                    <p className="opacity-90">Institution of Occupational Health certification</p>
+                    <h4 className="font-semibold mb-2">IOSH Managing Safely</h4>
+                    <p className="opacity-90">Institution of Occupational Safety and Health</p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">OSHA 30 Hours</h4>

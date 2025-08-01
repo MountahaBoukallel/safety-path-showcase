@@ -66,7 +66,7 @@ const Blog = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Blog & Insights
+            Research & Insights
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Sharing knowledge, case studies, and insights from the field of occupational health and safety
@@ -113,47 +113,6 @@ const Blog = () => {
           </div>
         </div>
 
-        {/* All Articles */}
-        <div>
-          <h3 className="text-2xl font-semibold text-foreground mb-8">Recent Articles</h3>
-          <div className="grid gap-6">
-            {regularPosts.map((post) => (
-              <Card key={post.id} className="group hover:shadow-md transition-all duration-300 border-border bg-card">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="outline" className="border-primary/20 text-primary">
-                      {post.category}
-                    </Badge>
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <div className="flex items-center">
-                        <CalendarDays className="h-4 w-4 mr-1" />
-                        {new Date(post.date).toLocaleDateString()}
-                      </div>
-                      <div className="flex items-center">
-                        <Clock className="h-4 w-4 mr-1" />
-                        {post.readTime}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <CardTitle className="text-lg group-hover:text-primary transition-colors mb-2">
-                        {post.title}
-                      </CardTitle>
-                      <CardDescription className="leading-relaxed">
-                        {post.excerpt}
-                      </CardDescription>
-                    </div>
-                    <Button variant="ghost" size="sm" className="ml-4 group-hover:text-primary">
-                      Read More
-                      <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </div>
-                </CardHeader>
-              </Card>
-            ))}
-          </div>
-        </div>
 
       </div>
     </section>

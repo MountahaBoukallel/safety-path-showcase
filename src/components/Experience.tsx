@@ -83,11 +83,92 @@ const Experience = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Professional Experience</h2>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Professional Experience</h1>
             <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Proven track record in health, safety, and environmental management across diverse industries
             </p>
+          </div>
+
+          {/* Key Achievements Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Key Achievements</h2>
+            <Card className="overflow-hidden border-l-4 border-l-primary">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
+                  Strategic Safety and Operational Excellence in Relocating Aramco Drilling Assets
+                </h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  As Secretary to the Drilling Support Unit Supervisor, I played a pivotal role in the seamless execution of a high-stakes 
+                  project involving the relocation of 28,461 critical drilling equipment items from Aramco Dhahran to the Aramco Industrial 
+                  Facility SPARK 6602. The project emphasized adherence to Aramco's stringent safety standards and operational protocols 
+                  to ensure the safe transportation and handling of vital assets.
+                </p>
+                
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold text-foreground mb-4">Key Responsibilities:</h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Facilitated the implementation of Aramco safety standards and policies across all phases of the relocation process, ensuring regulatory compliance and operational efficiency.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Advised teams on safety procedures, including forklift operations, equipment loading/offloading, and secure transport practices, aligning with Aramco's safety benchmarks.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Conducted Weekly safety meetings and provided proactive mitigation strategies to eliminate potential hazards and ensure a zero-incident operation.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Prepared and maintained detailed documentation of safety protocols, compliance records, and project reports to support accountability and continuous improvement.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold text-foreground mb-4">Tools and Practices:</h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Comprehensive application of Aramco safety standards and policies in operational workflows.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Advanced safe handling and transportation methodologies.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Industry-standard forklift operation protocols and safe material loading and offloading practices.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-xl font-semibold text-foreground mb-4">Key Achievements:</h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Successfully managed the safe relocation of 28,461 drilling equipment items without loss or damage.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="text-muted-foreground">Achieved a zero-incident record throughout the project, meeting and exceeding Aramco's stringent safety and operational benchmarks.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="p-4 bg-primary/10 rounded-lg">
+                  <h4 className="text-lg font-semibold text-primary mb-2">Impact:</h4>
+                  <p className="text-muted-foreground">
+                    This project underscores my ability to bridge administrative expertise with operational safety and compliance in a high-pressure 
+                    environment. By aligning closely with Aramco's standards, I contributed to the successful execution of a large-scale logistical 
+                    operation while upholding the highest levels of safety and efficiency.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Featured Projects */}
