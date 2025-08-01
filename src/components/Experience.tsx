@@ -195,7 +195,7 @@ const Experience = () => {
                   </div>
 
                   {/* Incident graph with text wrapping */}
-                  <div className="float-right ml-4 mb-4" style={{width: '540px', height: '300px'}}>
+                  <div className="float-right ml-4 mb-4" style={{width: '540px', height: '400px'}}>
                     <div className="relative w-full h-full rounded-lg overflow-hidden shadow-md">
                       <img 
                         src={incidentGraphImg} 
